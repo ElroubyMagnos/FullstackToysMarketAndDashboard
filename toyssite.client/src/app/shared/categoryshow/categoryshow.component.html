@@ -1,0 +1,12 @@
+<article class="products mb-5 mt-5">
+    <div class="catshow mt-3 mb-5 text-center text-light p-3">
+        <h1>{{Category.name}} <img class="rounded-circle" width="150" height="150" [src]="'data:image/png;base64,' + Category.image" alt=""></h1>
+        <p>{{Category.desc}}</p>
+    </div>
+    <section class="row text-end justify-content-center gap-3 align-items-center">
+        <app-product class="col-12 col-sm-12 col-md-4" *ngFor="let pro of CatProducts" [pro]="pro"></app-product>
+    </section>
+    <div class="m-auto text-center m-5">
+        <img *ngIf="Loading" src="buffering.gif" alt="">
+    </div>
+</article>

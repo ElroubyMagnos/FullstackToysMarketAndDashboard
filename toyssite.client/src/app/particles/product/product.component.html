@@ -1,0 +1,13 @@
+<div (click)="AddToCart();" title="Click to buy" class="productcard">
+    <div class="cardhead">
+      <p class="canhide">{{pro.categoryName}}</p>
+      <p class="canhide">-{{((pro.discountNow / pro.price) * 100) | decimalfixer}}%</p>
+    </div>
+    <img [src]="'data:image/png;base64,' + pro.image" alt="">
+    <div class="onimage canhide position-absolute bottom-0 start-0 text-center">
+      <h2 class="fw-bolder">{{pro.title}}</h2>
+      <hr/>
+      <p class="fw-bold">{{[pro.description]}}</p>
+      <p class="d-flex justify-content-between"><span class="price">{{pro.price}} L.E</span>|<del class="discount">{{pro.discountNow}} {{pro.discountNow.toString().length > 0 ? 'L.E' : ''}}</del></p>
+    </div>
+</div>

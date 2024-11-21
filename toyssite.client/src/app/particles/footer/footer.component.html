@@ -1,0 +1,32 @@
+<footer class="p-5">
+    <section class="row text-center text-light">
+        <div class="col-12 col-sm-12 col-md-4">
+            <h1 class="mb-3">ارسل الينا بريداً</h1>
+            <form #f="ngForm" ngNativeValidate (ngSubmit)="SendEmailMsg(f);" class="d-flex flex-column gap-1">
+                <input placeholder="بريدك الالكتروني" class="form-control text-end" required type="email" name="Email" ngModel>
+                <textarea placeholder="رسالتك" class="form-control text-end" required name="Message" ngModel></textarea>
+                <button type="submit" class="form-control btn btn-danger">ارسال</button>
+            </form>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 mt-3">
+            <h1 class="mb-3">صفحاتنا</h1>
+            <ul class="navbar-nav d-flex justify-content-between align-items-center m-auto gap-3">
+                <li class="nav-item">
+                  <a class="nav-link text-light" [routerLink]="['/home']" routerLinkActive="bg-danger"><i class="bi bi-house-door icon"></i> الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" [routerLink]="['/shop']" routerLinkActive="bg-danger"><i class="bi bi-shop-window icon"></i> المتجر</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" [routerLink]="['/search']" routerLinkActive="bg-danger"><i class="fa-brands fa-wpexplorer icon"></i> استكشف</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" [routerLink]="['/callus']" routerLinkActive="bg-danger"><i class="fa-regular fa-address-card icon"></i> تواصل معنا</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 d-flex flex-column justify-content-center">
+            <img src="footerlogo.png" alt="">
+        </div>
+    </section>
+</footer>

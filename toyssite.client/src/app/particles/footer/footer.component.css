@@ -1,0 +1,17 @@
+footer {
+  background-color: #0B5ED7;
+}
+footer img {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+}
+footer ul li a {
+  padding: 5px;
+}
+footer ul li a:hover {
+  background-color: #DC3545;
+}
+textarea {
+  resize: none;
+}

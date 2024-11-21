@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DB\BasicInfoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DB\BillsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DB\CategoriesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DB\PrivateChatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DB\ProductsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Source\CustomWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

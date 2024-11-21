@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:4200",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "D:\\Windows Helper\\Abdullah\\Desktop\\ToysSite\\ToysSite.Server\\..\\toyssite.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

@@ -1,0 +1,54 @@
+<article class="RecBillNumber" *ngIf="CurrentBill">
+    <p>{{CurrentBill.billNumber}} :رقم الفاتورة</p>
+    <p>{{FullPrice}} :اجمالي السعر</p>
+</article>
+
+<article *ngIf="!CurrentBill">
+    <section *ngIf="linker.AddedProducts.length === 0 && ReceivedBillNumber == 0">
+        <h1 class="d-flex justify-content-center align-items-center">Bill Is Empty</h1>
+    </section>
+    <section *ngIf="linker.AddedProducts.length > 0" class="tablesection">
+        <table>
+            <tr>
+                <th>صورة</th>
+                <th>الاسم</th>
+                <th>السعر</th>
+                <th>القسم</th>
+            </tr>
+            <tr [title]="Addpro.description" *ngFor="let Addpro of linker.AddedProducts">
+                <td><img width="50" height="50" class="rounded-circle" [src]="'data:image/png;base64,' + Addpro.image" alt=""></td>
+                <td>{{Addpro.title}}</td>
+                <td>{{Addpro.price}}</td>
+                <td>{{Addpro.categoryName}}</td>
+            </tr>
+        </table>
+    </section>
+    <form *ngIf="ReceivedBillNumber == 0 && linker.AddedProducts.length > 0" #f="ngForm" (ngSubmit)="SubmitBill(f);" class="PropertiesSection text-light">
+        <div class="IsDelivery d-flex align-items-center justify-content-between align-content-center gap-1">
+            <i style="cursor: pointer;" (click)="ChangeState();" [class]="'fs-3 bi bi-arrow-bar-' + (IsDelivery ? 'up' : 'down')"></i>
+            <p>اضغط السهم للتبديل</p>
+        </div>
+        <div *ngIf="!IsDelivery">
+            <p class="text-center">
+                <span>عنوان الاستلام</span>
+                <br/>
+                <span class="fs-3">{{Address.addressOfUs}}</span>
+            </p>
+        </div>
+        <div *ngIf="IsDelivery" class="d-flex align-items-center justify-content-between align-content-center gap-1">
+            <input required class="text-center" placeholder="ادخل البيانات" type="text" name="CustomerPhone" ngModel>
+            <p>:هاتف العميل</p>
+        </div>
+        <div *ngIf="IsDelivery" class="d-flex align-items-center justify-content-between align-content-center gap-1">
+            <input required class="text-center" placeholder="ادخل البيانات" type="text" name="CustomerAddress" ngModel>
+            <p>:عنوان العميل</p>
+        </div>
+        <button class="btn btn-danger form-control mt-2">ارسل الفاتورة</button>
+    </form>
+
+    <div *ngIf="ReceivedBillNumber != 0" class="RecBillNumber">
+        <p>رقم الفاتورة الخاصة بك</p>
+        <p class="fs-1">{{ReceivedBillNumber}}</p>
+        <button (click)="Copy();" type="button" class="btn btn-danger">نسخ</button>
+    </div>
+</article>

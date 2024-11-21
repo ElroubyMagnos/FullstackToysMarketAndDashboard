@@ -1,0 +1,20 @@
+<article class="cats text-light">
+    <section class="d-flex justify-content-center align-items-center flex-column">
+        <h1 class="mb-5">المتجر</h1>
+        <div class="catshow d-flex gap-2 flex-wrap">
+            <a [title]="cat.desc" [routerLink]="['/catshow/' + cat.id]" class="cat" *ngFor="let cat of AllCats">
+                {{cat.name}}
+                <img width="50" height="50" [src]="'data:image/png;base64,' + cat.image" alt="">
+            </a>
+        </div>
+    </section>
+</article>
+
+<article class="products">
+    <section class="row text-end justify-content-center gap-3 align-items-center">
+        <app-product class="col-12 col-sm-12 col-md-4" *ngFor="let pro of AllProducts" [pro]="pro"></app-product>
+    </section>
+    <div class="m-auto text-center m-5">
+        <img *ngIf="Loading" src="buffering.gif" alt="">
+    </div>
+</article>

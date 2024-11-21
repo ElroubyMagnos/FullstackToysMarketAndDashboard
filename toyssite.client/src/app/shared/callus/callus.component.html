@@ -1,0 +1,26 @@
+<article class="row">
+    <section class="col col-sm-12 col-md-6 p-5">
+        <form #f="ngForm" ngNativeValidate (ngSubmit)="SendEmailMsg(f);" class="materials d-flex flex-column gap-1">
+            <h1 class="text-center mb-3">تواصل معنا</h1>
+            
+            <span class="d-flex position-relative">
+                <i class="bi bi-envelope-arrow-up paddingicon"></i>
+                <input required placeholder="الايميل" class="form-control rounded-0 text-end" type="email" name="Email" ngModel>
+            </span>
+            
+            <textarea required placeholder="الرسالة" class="form-control rounded-0 text-end" name="Message" ngModel></textarea>
+            
+            <button class="btn btn-primary form-control" type="submit">ارسل</button>
+        </form>
+        <div class="icons">
+            <div class="d-flex align-items-center gap-3">
+                <a [href]="basicinfo.fblink"><i class="bi bi-facebook icon text-primary"></i></a>
+                <a (click)="ShowAddress();"><i class="fa-solid fa-address-book icon text-dark"></i></a>
+                <a [href]="'https://wa.me/' + basicinfo.phoneOfUs"><i class="bi bi-whatsapp icon text-success"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="col col-sm-12 col-md-6">
+        <img src="contactus.jpg" alt="">
+    </section>
+</article>

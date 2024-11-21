@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Windows Helper\\Abdullah\\Desktop\\ToysSite\\ToysDashboard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E38297F-5B85-40AC-B3C8-7EF08BB9F0E9}|ToysDashboard.csproj|d:\\windows helper\\abdullah\\desktop\\toyssite\\toysdashboard\\db\\billswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E38297F-5B85-40AC-B3C8-7EF08BB9F0E9}|ToysDashboard.csproj|solutionrelative:db\\billswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E38297F-5B85-40AC-B3C8-7EF08BB9F0E9}|ToysDashboard.csproj|d:\\windows helper\\abdullah\\desktop\\toyssite\\toysdashboard\\db\\billswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E38297F-5B85-40AC-B3C8-7EF08BB9F0E9}|ToysDashboard.csproj|solutionrelative:db\\billswindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BillsWindow.cs",
+              "DocumentMoniker": "D:\\Windows Helper\\Abdullah\\Desktop\\ToysSite\\ToysDashboard\\DB\\BillsWindow.cs",
+              "RelativeDocumentMoniker": "DB\\BillsWindow.cs",
+              "ToolTip": "D:\\Windows Helper\\Abdullah\\Desktop\\ToysSite\\ToysDashboard\\DB\\BillsWindow.cs",
+              "RelativeToolTip": "DB\\BillsWindow.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAIAwwB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T13:31:35.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillsWindow.cs [Design]",
+              "DocumentMoniker": "D:\\Windows Helper\\Abdullah\\Desktop\\ToysSite\\ToysDashboard\\DB\\BillsWindow.cs",
+              "RelativeDocumentMoniker": "DB\\BillsWindow.cs",
+              "ToolTip": "D:\\Windows Helper\\Abdullah\\Desktop\\ToysSite\\ToysDashboard\\DB\\BillsWindow.cs [Design]",
+              "RelativeToolTip": "DB\\BillsWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T13:24:50.815Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

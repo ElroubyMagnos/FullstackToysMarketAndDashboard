@@ -1,0 +1,14 @@
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\bin\Debug\net8.0\ToysCore.deps.json
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\bin\Debug\net8.0\ToysCore.runtimeconfig.json
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\bin\Debug\net8.0\ToysCore.dll
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\bin\Debug\net8.0\ToysCore.pdb
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ToysCore.csproj.AssemblyReference.cache
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ToysCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ToysCore.AssemblyInfoInputs.cache
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ToysCore.AssemblyInfo.cs
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ToysCore.csproj.CoreCompileInputs.cache
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ToysCore.dll
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\refint\ToysCore.dll
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ToysCore.pdb
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ToysCore.genruntimeconfig.cache
+D:\Windows Helper\Abdullah\Desktop\ToysSite\ToysCore\obj\Debug\net8.0\ref\ToysCore.dll

@@ -1,0 +1,30 @@
+<article class="m-1 p-4">
+    <div class="headsection d-flex justify-content-between flex-wrap gap-2">
+        <nav title="عدد المعروض" aria-label="breadcrumb">
+            <ol class="breadcrumb text-light">
+                <li (click)="MaxCountShow = 6" [class]="'breadcrumb-item ' + (MaxCountShow === 6 ? 'text-danger' : '')"><a>6</a></li>
+                <li (click)="MaxCountShow = 12" [class]="'breadcrumb-item ' + (MaxCountShow === 12 ? 'text-danger' : '')"><a>12</a></li>
+                <li (click)="MaxCountShow = 24" [class]="'breadcrumb-item ' + (MaxCountShow === 24 ? 'text-danger' : '')"><a>24</a></li>
+            </ol>
+        </nav>
+
+        <form #f="ngForm" (ngSubmit)="SearchFor(f, select);" class="d-flex justify-content-center align-content-center">
+            <button type="submit" class="btn btn-primary rounded-0">ابحث</button>
+            <div class="searchbox d-flex position-relative">
+                <input name="SearchWord" class="text-center px-5 w-100" type="text" placeholder="ادخل كلمة البحث" ngModel>
+                <i class="icon fa-brands fa-searchengin position-absolute fs-1"></i>
+            </div>
+        </form>
+
+        <select #select class="px-5">
+            <option value="Normal">الترتيب العادي</option>
+            <option value="CheapFirst">الارخص اولاً</option>
+            <option value="ExpensiveFirst">الاغلي اولاً</option>
+        </select>
+
+    </div>
+
+    <section class="ProductsShow mt-5 mb-5 row p-2 justify-content-center">
+        <app-product *ngFor="let pro of AllProducts" class="col-12 col-sm-12 col-md-4 mb-1" [pro]="pro"></app-product>
+    </section>
+</article>

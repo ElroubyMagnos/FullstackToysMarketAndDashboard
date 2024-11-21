@@ -1,0 +1,14 @@
+<article class="position-fixed end-0 bottom-0 m-3 p-2">
+    <a [attr.data-notify]="UnseenFromPanel" (click)="ChatShow = true;" *ngIf="!ChatShow" class="iconbase text-center"><i class="bi bi-chat-left-dots icon bg-danger text-light"></i></a>
+    
+    <section *ngIf="ChatShow" class="float text-light text-center d-flex justify-content-center align-items-center align-content-center">  
+        <input (click)="ChatShow = false;" class="position-absolute btn btn-danger end-0 top-0" type="button" value="X">
+        <div #ta class="textarea">
+            <p [class]="msg.sendByPanel ? 'text-end text-danger' : 'text-start'" *ngFor="let msg of CurrentMessages">{{msg.content}}</p>
+        </div>
+        <form #f="ngForm" ngNativeValidate (ngSubmit)="SendPrivateMsg(f, ta);" class="position-absolute bottom-0 d-flex">
+            <input class="form-control" placeholder="رسالتك" type="text" name="Message" ngModel required>
+            <button type="submit" class="btn btn-danger">ارسل</button>
+        </form>
+    </section>
+</article>
